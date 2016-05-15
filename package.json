@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "version": "0.0.0",
+  "description": "",
+  "main": "js/uikit.min.js",
+  "keywords": [
+    "uikit",
+    "jspm",
+    "npm"
+  ],
+  "author": "Decipher Technology Studios, LLC",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "directories": {
+    "css": "css",
+    "fonts": "fonts",
+    "js": "js"
+  }
+}
