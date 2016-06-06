@@ -82,7 +82,7 @@ strong {
   color: #D05;
   white-space: nowrap;
   background-color: #ececec;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 /*
  * Emphasize
@@ -329,7 +329,7 @@ blockquote {
   font-size: 16px;
   line-height: 22px;
   font-style: italic;
-  border-radius: 3px;
+  border-radius: 2px;
   background-color: #ececec;
 }
 /* Preformatted text
@@ -346,7 +346,7 @@ pre {
   tab-size: 4;
   /* 1 */
   overflow: auto;
-  border-radius: 3px;
+  border-radius: 2px;
   background-color: #ececec;
 }
 /* Selection pseudo-element
@@ -1345,12 +1345,12 @@ iframe {
   padding: 15px;
   background: #ececec;
   color: #182433;
-  border-radius: 3px;
+  border-radius: 2px;
   background-color: #ececec;
 }
 .uk-panel-box .uk-panel-teaser > img {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 .uk-panel-box > .uk-nav-side > li > a:hover,
 .uk-panel-box > .uk-nav-side > li > a:focus,
@@ -1833,13 +1833,13 @@ ul.uk-nav-sub {
   color: #182433;
   /* 2 */
   outline: none;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 /* Active */
 .uk-nav-side > li.uk-active > a {
   background: #00a8e6;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 /*
  * Sub-object: `uk-nav-header`
@@ -2004,7 +2004,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-navbar {
   background: #ececec;
   color: #182433;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 /*
  * Micro clearfix
@@ -2199,16 +2199,16 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   float: right;
 }
 .uk-navbar-nav:first-child > li:first-child > a {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
 .uk-navbar-flip .uk-navbar-nav:first-child > li:first-child > a {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 .uk-navbar-flip .uk-navbar-nav:last-child > li:last-child > a {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 .uk-navbar-attached {
   border-radius: 0;
@@ -2273,7 +2273,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-subnav > * > * {
   display: inline-block;
   color: #182433;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 /*
  * Hover
@@ -2436,7 +2436,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   box-sizing: content-box;
   /* 2 */
   text-align: center;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 /*
  * Links
@@ -2529,7 +2529,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   border-bottom-width: 0;
   color: #07D;
   text-decoration: none;
-  border-radius: 3px 3px 0 0;
+  border-radius: 2px 2px 0 0;
 }
 .uk-tab > li:nth-child(n+2) > a {
   margin-left: 5px;
@@ -2768,26 +2768,15 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
     border-left-color: transparent;
   }
 }
-/* Modifier: `uk-tab-bottom'
-     ========================================================================== */
 .uk-tab-bottom > li > a {
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 2px 2px;
 }
-/* Modifier: `uk-tab-left', `uk-tab-right'
-    ========================================================================== */
-/* Tablet and bigger */
 @media (min-width: 768px) {
-  /*
-         * Modifier: `uk-tab-left'
-         */
   .uk-tab-left > li > a {
-    border-radius: 3px 0 0 3px;
+    border-radius: 2px 0 0 2px;
   }
-  /*
-         * Modifier: `uk-tab-right'
-         */
   .uk-tab-right > li > a {
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 2px 2px 0;
   }
 }
 /* ========================================================================
@@ -3207,7 +3196,29 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   -webkit-transition-property: border, background, color, box-shadow, padding;
   transition: all 0.2s linear;
   transition-property: border, background, color, box-shadow, padding;
-  border-radius: 3px;
+  border-radius: 2px;
+  transition: all 0s linear;
+  -webkit-transition: all 0s linear;
+}
+.uk-form select:hover,
+.uk-form textarea:hover,
+.uk-form input:not([type]):hover,
+.uk-form input[type="text"]:hover,
+.uk-form input[type="password"]:hover,
+.uk-form input[type="datetime"]:hover,
+.uk-form input[type="datetime-local"]:hover,
+.uk-form input[type="date"]:hover,
+.uk-form input[type="month"]:hover,
+.uk-form input[type="time"]:hover,
+.uk-form input[type="week"]:hover,
+.uk-form input[type="number"]:hover,
+.uk-form input[type="email"]:hover,
+.uk-form input[type="url"]:hover,
+.uk-form input[type="search"]:hover,
+.uk-form input[type="tel"]:hover,
+.uk-form input[type="color"]:hover {
+  transition: all 0s linear;
+  -webkit-transition: all 0s linear;
 }
 .uk-form select:focus,
 .uk-form textarea:focus,
@@ -3226,9 +3237,9 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-form input[type="search"]:focus,
 .uk-form input[type="tel"]:focus,
 .uk-form input[type="color"]:focus {
-  border-color: #99baca;
+  border-color: #ddd;
   outline: 0;
-  background: #f5fbfe;
+  background: #ffffff;
   color: #182433;
 }
 .uk-form select:disabled,
@@ -3248,7 +3259,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-form input[type="search"]:disabled,
 .uk-form input[type="tel"]:disabled,
 .uk-form input[type="color"]:disabled {
-  border-color: #ddd;
+  border-color: transparent;
   background-color: #f5f5f5;
   color: #777;
 }
@@ -3301,7 +3312,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-form legend:after {
   content: "";
   display: block;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid transparent;
   /* 1 */
   width: 100%;
 }
@@ -3321,7 +3332,7 @@ textarea.uk-form-large,
 input[type].uk-form-large,
 input:not([type]).uk-form-large {
   height: 35px;
-  padding: 8px 6px;
+  padding: 4px 6px;
   font-size: 16px;
 }
 /* Reset height
@@ -3511,6 +3522,63 @@ select.uk-form-width-mini {
 .uk-form-icon-flip > input {
   padding-right: 30px !important;
 }
+.uk-form select {
+  cursor: pointer;
+  border: transparent;
+  color: #182433;
+  background-color: #ececec;
+  text-overflow: ellipsis;
+}
+.uk-form select::-ms-expand {
+  display: none;
+}
+.uk-form select:hover {
+  color: #182433;
+  background-color: #dfdfdf;
+}
+.uk-form select:focus,
+.uk-form select:active {
+  color: #07D;
+  background-color: #d3d3d3;
+}
+.uk-form select,
+.uk-form select:hover,
+.uk-form select:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 1.8em;
+  background-image: url('../images/down-arrow-highlight.png');
+  background-size: 1em;
+  background-repeat: no-repeat;
+  background-position: 97% center;
+  background-position: right 4px center;
+}
+.uk-form select:hover {
+  background-image: url('../images/down-arrow-highlight.png');
+}
+.uk-form select[disabled],
+.uk-form select:disabled,
+.uk-form select[disabled]:hover,
+.uk-form select:disabled:hover,
+.uk-form select[disabled]:focus,
+.uk-form select:disabled:focus,
+.uk-form select[disabled]:active,
+.uk-form select:disabled:active {
+  cursor: default;
+  color: #777;
+  background-color: #f5f5f5;
+  background-image: url('../images/down-arrow-disabled.png');
+}
+.uk-form select[multiple],
+.uk-form select[multiple]:hover,
+.uk-form select[multiple]:active,
+.uk-form select[multiple]:focus {
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  background-image: none;
+  padding-right: 4px;
+}
 /* ========================================================================
    Component: Button
  ========================================================================== */
@@ -3564,7 +3632,7 @@ select.uk-form-width-mini {
   text-decoration: none;
   text-align: center;
   font-weight: 400;
-  border-radius: 3px;
+  border-radius: 2px;
   font-family: "Source Sans", "Helvetica", "Helvetica Neue", sans-serif;
 }
 .uk-button [class*="uk-icon-"] {
@@ -3592,7 +3660,7 @@ select.uk-form-width-mini {
  */
 .uk-button:hover,
 .uk-button:focus {
-  background-color: #d3d3d3;
+  background-color: #dfdfdf;
   color: #182433;
   /* 2 */
   outline: none;
@@ -3602,7 +3670,7 @@ select.uk-form-width-mini {
 /* Active */
 .uk-button:active,
 .uk-button.uk-active {
-  background-color: #b9b9b9;
+  background-color: #d3d3d3;
   color: #182433;
 }
 /* Color modifiers
@@ -3611,19 +3679,19 @@ select.uk-form-width-mini {
  * Modifier: `uk-button-primary`
  */
 .uk-button-primary {
-  background-color: #182433;
+  background-color: #07D;
   color: #fff;
 }
 /* Hover */
 .uk-button-primary:hover,
 .uk-button-primary:focus {
-  background-color: #283c56;
+  background-color: #1191ff;
   color: #fff;
 }
 /* Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
-  background-color: #395578;
+  background-color: #44a9ff;
   color: #fff;
 }
 /*
@@ -5950,7 +6018,7 @@ select.uk-form-width-mini {
   text-align: center;
   vertical-align: middle;
   text-transform: none;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 /*
  * Keep color when badge is a link
@@ -5995,7 +6063,7 @@ a.uk-badge:hover {
   padding: 10px;
   background: #ebf7fd;
   color: #2d7091;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 /*
  * Add margin if adjacent element
@@ -8755,17 +8823,17 @@ a.uk-thumbnail:focus {
   color: #444;
 }
 .uk-contrast .uk-button-primary {
-  background-color: #182433;
+  background-color: #07D;
   color: #fff;
 }
 .uk-contrast .uk-button-primary:hover,
 .uk-contrast .uk-button-primary:focus {
-  background-color: #283c56;
+  background-color: #1191ff;
   color: #fff;
 }
 .uk-contrast .uk-button-primary:active,
 .uk-contrast .uk-button-primary.uk-active {
-  background-color: #395578;
+  background-color: #44a9ff;
   color: #fff;
 }
 .uk-contrast .uk-icon-hover {
@@ -8838,6 +8906,14 @@ a.uk-thumbnail:focus {
     page-break-after: avoid;
   }
 }
+.hook-form {
+  transition: all 0s linear;
+  -webkit-transition: all 0s linear;
+}
+.hook-form:hover {
+  transition: all 0s linear;
+  -webkit-transition: all 0s linear;
+}
 .uk-button-link:focus {
   outline: 1px dotted;
 }
@@ -8862,73 +8938,73 @@ a.uk-thumbnail:focus {
 }
 @font-face {
   font-family: 'Source Sans';
-  src: url('/fonts/SourceSansPro-ExtraLight.woff') format('woff');
+  src: url('../../custom/decipher/fonts/SourceSansPro-ExtraLight.woff') format('woff');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: 'Source Sans';
-  src: url('/fonts/SourceSansPro-ExtraLightItalic.woff') format('woff');
+  src: url('../../custom/decipher/fonts/SourceSansPro-ExtraLightItalic.woff') format('woff');
   font-weight: 200;
   font-style: italic;
 }
 @font-face {
   font-family: 'Source Sans';
-  src: url('/fonts/SourceSansPro-Light.woff') format('woff');
+  src: url('../../custom/decipher/fonts/SourceSansPro-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Source Sans';
-  src: url('/fonts/SourceSansPro-LightItalic.woff') format('woff');
+  src: url('../../custom/decipher/fonts/SourceSansPro-LightItalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
 }
 @font-face {
   font-family: 'Source Sans';
-  src: url('/fonts/SourceSansPro-Regular.woff') format('woff');
+  src: url('../../custom/decipher/fonts/SourceSansPro-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Source Sans';
-  src: url('/fonts/SourceSansPro-Italic.woff') format('woff');
+  src: url('../../custom/decipher/fonts/SourceSansPro-Italic.woff') format('woff');
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: 'Source Sans';
-  src: url('/fonts/SourceSansPro-Semibold.woff') format('woff');
+  src: url('../../custom/decipher/fonts/SourceSansPro-Semibold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'Source Sans';
-  src: url('/fonts/SourceSansPro-SemiboldItalic.woff') format('woff');
+  src: url('../../custom/decipher/fonts/SourceSansPro-SemiboldItalic.woff') format('woff');
   font-weight: 600;
   font-style: italic;
 }
 @font-face {
   font-family: 'Source Sans';
-  src: url('/fonts/SourceSansPro-Bold.woff') format('woff');
+  src: url('../../custom/decipher/fonts/SourceSansPro-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'Source Sans';
-  src: url('/fonts/SourceSansPro-BoldItalic.woff') format('woff');
+  src: url('../../custom/decipher/fonts/SourceSansPro-BoldItalic.woff') format('woff');
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-family: 'Source Sans';
-  src: url('/fonts/SourceSansPro-Black.woff') format('woff');
+  src: url('../../custom/decipher/fonts/SourceSansPro-Black.woff') format('woff');
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: 'Source Sans';
-  src: url('/fonts/SourceSansPro-BlackItalic.woff') format('woff');
+  src: url('../../custom/decipher/fonts/SourceSansPro-BlackItalic.woff') format('woff');
   font-weight: 800;
   font-style: italic;
 }
