@@ -8,7 +8,7 @@
     }
 
     if (typeof define == "function" && define.amd) {
-        define("uikit-grid-parallax", ["uikit"], function(){
+        define("uikit-grid-parallax", ["github:DecipherNow/uikit-decipher-theme@master/js/uikit"], function(){
             return component || addon(UIkit);
         });
     }

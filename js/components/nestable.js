@@ -11,7 +11,7 @@
     }
 
     if (typeof define == "function" && define.amd) {
-        define("uikit-nestable", ["uikit"], function(){
+        define("uikit-nestable", ["github:DecipherNow/uikit-decipher-theme@master/js/uikit"], function(){
             return component || addon(UIkit);
         });
     }

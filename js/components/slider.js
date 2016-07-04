@@ -8,7 +8,7 @@
     }
 
     if (typeof define == "function" && define.amd) {
-        define("uikit-slider", ["uikit"], function(){
+        define("uikit-slider", ["github:DecipherNow/uikit-decipher-theme@master/js/uikit"], function(){
             return component || addon(UIkit);
         });
     }

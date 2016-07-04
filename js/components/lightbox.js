@@ -8,7 +8,7 @@
     }
 
     if (typeof define == "function" && define.amd) { // AMD
-        define("uikit-lightbox", ["uikit"], function(){
+        define("uikit-lightbox", ["github:DecipherNow/uikit-decipher-theme@master/js/uikit"], function(){
             return component || addon(UIkit);
         });
     }
