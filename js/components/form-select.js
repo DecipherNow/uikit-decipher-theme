@@ -8,7 +8,7 @@
     }
 
     if (typeof define == "function" && define.amd) {
-        define("uikit-form-select", ["uikit"], function(){
+        define("uikit-form-select", ["github:DecipherNow/uikit-decipher-theme@master/js/uikit"], function(){
             return component || addon(UIkit);
         });
     }
