@@ -7,8 +7,10 @@ Go to [Decipher's UIkit fork](https://github.com/DecipherNow/uikit)
 
     $ gulp -c -t decipher -P -i -f
 
-Copy the compiled assets to this repo
+Copy the compiled assets from the `dist` flolder to this repo.
 ```
+    
+  ├── dist
     ├── css
     ├── fonts
     ├── images
