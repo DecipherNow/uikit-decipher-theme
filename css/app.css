@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/font/OpenSans-Light-webfont.eot");
+  src: url("/font/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("/font/OpenSans-Light-webfont.woff") format("woff"), url("/font/OpenSans-Light-webfont.ttf") format("truetype"), url("/font/OpenSans-Light-webfont.svg#OpenSansLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/font/OpenSans-Regular-webfont.eot");
+  src: url("/font/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/font/OpenSans-Regular-webfont.woff") format("woff"), url("/font/OpenSans-Regular-webfont.ttf") format("truetype"), url("/font/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");
+  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.login {
+  position: fixed;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
+}
+
+.login .message {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  margin-left: -100px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/font/OpenSans-Light-webfont.eot");
+  src: url("/font/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("/font/OpenSans-Light-webfont.woff") format("woff"), url("/font/OpenSans-Light-webfont.ttf") format("truetype"), url("/font/OpenSans-Light-webfont.svg#OpenSansLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/font/OpenSans-Regular-webfont.eot");
+  src: url("/font/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/font/OpenSans-Regular-webfont.woff") format("woff"), url("/font/OpenSans-Regular-webfont.ttf") format("truetype"), url("/font/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");
+  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main {
+  position: absolute;
+  top: 55px;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  background: #f7f7f7;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 20px auto;
+  max-width: 968px;
+  padding: 20px;
+}
+
+.content h1,
+.content h4 {
+  font-weight: 200;
+}
+
+.content h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.content h4 {
+  font-size: 1.2em;
+  margin-left: 20px;
+}
+
+.content .user-dependencies {
+  margin-top: 20px;
+}
+
+.content .material-design-example {
+  position: relative;
+}
+
+.content .material-design-example .description {
+  position: absolute;
+  top: 5px;
+  width: 510px;
+}
+
+.content .material-design-example .material-design-dialog {
+  margin-left: 510px;
+}
+
+.content .bootstrap-example > div {
+  float: right;
+}
+
+.content .bootstrap-example button {
+  margin-left: 20px;
+}
+
+ul {
+  margin: 20px 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li h4 {
+  display: inline-block;
+  margin: 10px;
+}
+
+ul li .description {
+  color: #737373;
+  display: inline-block;
+  font-style: italic;
+}
+
+.corius-nav {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  z-index: 1;
+  background-color: #333;
+}
+
+.corius-nav h1 {
+  color: #fff;
+  float: left;
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 55px;
+  margin: 0 20px;
+}
+
+.corius-nav .nav-link {
+  color: #fff;
+  display: block;
+  float: left;
+  font-size: 16px;
+  font-weight: 200;
+  height: 100%;
+  line-height: 55px;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.corius-nav .display-name {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: auto;
+  left: auto;
+  width: auto;
+  height: auto;
+  color: #fff;
+  line-height: 55px;
+}
+
+md-toolbar {
+  min-height: 55px !important;
+}
+
+.md-toolbar-tools {
+  height: 55px !important;
+}
+
+.notification-dropdown-title {
+  padding: 16px;
+}
+
+.corius-materialize-nav .brand-logo {
+  float: left;
+  position: relative;
+}
+
+.corius-materialize-nav .text:hover {
+  background-color: transparent;
+}
+
+.corius-materialize .dropdown-content .corius-no-hover:hover {
+  background-color: transparent;
+}
+
+.menu-title {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*# sourceMappingURL=app.css.map */
