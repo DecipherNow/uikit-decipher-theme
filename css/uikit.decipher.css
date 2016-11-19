@@ -2944,10 +2944,10 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-description-list-line > dt:nth-child(n+2) {
   margin-top: 5px;
   padding-top: 5px;
-  border-top: 1px solid #EEEFF0;
+  border-top: 1px solid #ddd;
 }
 .uk-description-list-line > dd {
-  color: #6D7580;
+  color: #999;
 }
 /* ========================================================================
    Component: Table
@@ -10840,6 +10840,38 @@ html[dir="rtl"] .uk-slider > * {
   src: url('../fonts/SourceSansPro-BlackItalic.woff') format('woff');
   font-weight: 800;
   font-style: italic;
+}
+/* Modifier: `uk-description-list-horizontal`
+ ========================================================================== */
+/* Tablet and bigger */
+@media (min-width: 768px) {
+  .uk-description-list-horizontal {
+    overflow: hidden;
+  }
+  .uk-description-list-horizontal > div > dt {
+    width: 160px;
+    float: left;
+    clear: both;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .uk-description-list-horizontal > div > dd {
+    margin-left: 180px;
+  }
+}
+/* Modifier: `uk-description-list-line`
+ ========================================================================== */
+.uk-description-list-line > div > dt {
+  font-weight: normal;
+}
+.uk-description-list-line > div:nth-child(n+2) {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid #ddd;
+}
+.uk-description-list-line > div > dd {
+  color: #999;
 }
 .hook-form {
   transition: all 0.1s ease;
